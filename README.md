@@ -1,8 +1,6 @@
 # A comprehensive atlas of fetal splicing patterns in the brain of adult myotonic dystrophy type 1 patients
 
-This repository stores R scripts and annotation files to reproduce the analysis of the publication "A comprehensive atlas of fetal splicing patterns in the brain of adult myotonic dystrophy type 1 patients". 
-
-A preprint is available on bioRxiv: https://www.biorxiv.org/content/10.1101/2021.10.01.462715v1
+This repository stores R scripts and annotation files to reproduce the analysis of the publication ["A comprehensive atlas of fetal splicing patterns in the brain of adult myotonic dystrophy type 1 patients"](https://academic.oup.com/nargab/article/4/1/lqac016/6544610). 
 
 ## Prerequisites
 
@@ -22,7 +20,7 @@ Data:
 
 ## Getting started
 
-1. Checkout this git repository: `git clone https://github.com/pacthoen/BrainDM1.git`
+1. Checkout this git repository: `git clone https://github.com/cmbi/BrainDM1.git`
 
 2. Navigate to the repository: `cd BrainDM1`
 
@@ -36,9 +34,9 @@ conda activate r-env
 4. Unzip annotation files: `gzip -d lib/SE.hg38.annotated.gff3.gz lib/gencode.v26.annotation.collapsed.gtf.gz`
 
 5. Run the following R scripts in this order:
-   1. [`scripts/prepareSampleMetadata.R`](https://github.com/pacthoen/BrainDM1/blob/main/scripts/prepareSampleMetadata.R): Combines metadata for all selected samples into one table
-   2. [`scripts/prepareSummarizedData.R`](https://github.com/pacthoen/BrainDM1/blob/main/scripts/prepareSummarizedData.R): Creates a matrix of exon inclusion data for all selected samples 
-   3. [`scripts/comparePSI.R`](https://github.com/pacthoen/BrainDM1/blob/main/scripts/comparePSI.R): Performs a group comparison of exon inclusion for all exon-skipping events
+   1. [`scripts/prepareSampleMetadata.R`](https://github.com/cmbi/BrainDM1/blob/main/scripts/prepareSampleMetadata.R): Combines metadata for all selected samples into one table
+   2. [`scripts/prepareSummarizedData.R`](https://github.com/cmbi/BrainDM1/blob/main/scripts/prepareSummarizedData.R): Creates a matrix of exon inclusion data for all selected samples 
+   3. [`scripts/comparePSI.R`](https://github.com/pacthoen/cmbi/blob/main/scripts/comparePSI.R): Performs a group comparison of exon inclusion for all exon-skipping events
 
 6. Now you can run any script in the `scripts/figure` or `scripts/tables` directory to reproduce the unedited content of the publication
 
